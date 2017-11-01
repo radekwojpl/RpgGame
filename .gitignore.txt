@@ -7,6 +7,9 @@
 *.o
 *.obj
 
+*/Debug
+*VC.db
+
 # Precompiled Headers
 *.gch
 *.pch
