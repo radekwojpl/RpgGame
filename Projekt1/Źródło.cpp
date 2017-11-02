@@ -5,10 +5,11 @@
 
 using namespace std;
 
-<<<<<<< HEAD
+
 //test do gita9 rafalek
-//test do gita 
-=======
+//test do gita Karol
+//2nd test by KAROL
+
 //test do gita9 proba123
 
 
