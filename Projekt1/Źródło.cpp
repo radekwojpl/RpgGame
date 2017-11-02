@@ -14,7 +14,6 @@ using namespace std;
 
 
 
->>>>>>> 5a137752604d0db9ac572de3bcb0d60342d6e520
 
 int main()
 {
