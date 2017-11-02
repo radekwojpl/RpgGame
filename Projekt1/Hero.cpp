@@ -5,7 +5,7 @@
 void Hero::printInfoAboutHero()
 {
 	cout << endl;
-	cout << "///////////////////////////////";
+	cout << "///////////////////////////////\n";
 	cout << "lvl:" << this->lvl<<endl;
 	cout << "Hero name-->" << this->name << endl;
 	cout << "Hero profession-->" << this->heroProfession << endl;
