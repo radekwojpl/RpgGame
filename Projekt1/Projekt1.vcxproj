@@ -111,12 +111,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Equipment.cpp" />
     <ClCompile Include="Hero.cpp" />
     <ClCompile Include="RpgGame.cpp" />
     <ClCompile Include="Statistics.cpp" />
     <ClCompile Include="Źródło.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Equipment.h" />
     <ClInclude Include="Hero.h" />
     <ClInclude Include="RpgGame.h" />
     <ClInclude Include="Statistics.h" />
