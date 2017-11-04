@@ -10,11 +10,15 @@ class Statistics
 	int intelligence;
 	
 public:
+	int getHealth();
+	int getStrenght();
+	int getAgility();
+	int getIntelligence();
 	void setHealth(int);
 	void setStrenght(int);
 	void setAgility(int);
 	void serIntelligence(int);
-	void setStatisticsDependsOnProfession(string);
+	void setStartingStatisticsDependsOnProfession(string);
 	void printStat();
 	Statistics();
 	~Statistics();
