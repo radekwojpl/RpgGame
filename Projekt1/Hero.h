@@ -15,8 +15,13 @@ private:
 	int nextLevelPD=10;
 	string name;
 	string heroProfession;
-	Statistics heroStatistisc;
 public:
+	int strongAttack();
+	bool isHit();
+	int lightAttack();
+	void levelUp();
+	bool isNextLevelAvailable();
+	Statistics heroStatistisc;
 	void printInfoAboutHero();
 	void setName(string);
 	void setHeroProfession(string);

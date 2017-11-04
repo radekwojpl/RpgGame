@@ -2,6 +2,16 @@
 
 
 
+int Hero::strongAttack()
+{
+	return 0 ;
+}
+
+bool Hero::isHit()
+{
+	return true;
+}
+
 void Hero::printInfoAboutHero()
 {
 	cout << endl;
@@ -52,7 +62,7 @@ void Hero::createHero()
 	getline(cin, name);
 	this->setName(name);
 	this->choseProfession();
-	this->heroStatistisc.setStartingStatisticsDependsOnProfession(heroProfession);
+	this->heroStatistisc.setStartingStatisticsDependsOnProfession(this->heroProfession);
 	
 }
 

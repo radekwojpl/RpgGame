@@ -13,7 +13,6 @@ int main()
 	int exitStatus = 7;
 	cout << "Create your hero\n";
 	Player.createHero();
-	int int = Player.
 	do
 	{
 		cout << "\n1. Print hero statistics\n"
