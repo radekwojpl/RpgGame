@@ -5,16 +5,6 @@
 
 using namespace std;
 
-
-//test do gita9 rafalek
-//test do gita Karol
-//2nd test by KAROL
-
-//test do gita9 proba123
-
-
-
-
 int main()
 {
 	Hero Player;
