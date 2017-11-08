@@ -5,6 +5,8 @@
 
 using namespace std;
 
+//kolejny test do gita
+
 int main()
 {
 	Hero Player;
