@@ -5,7 +5,7 @@
 
 using namespace std;
 
-//kolejny test do gita
+//kolejny test do gita2
 
 int main()
 {
