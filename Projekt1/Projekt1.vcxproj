@@ -115,6 +115,7 @@
     <ClCompile Include="Hero.cpp" />
     <ClCompile Include="RpgGame.cpp" />
     <ClCompile Include="Statistics.cpp" />
+    <ClCompile Include="Tavern.cpp" />
     <ClCompile Include="Źródło.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +123,7 @@
     <ClInclude Include="Hero.h" />
     <ClInclude Include="RpgGame.h" />
     <ClInclude Include="Statistics.h" />
+    <ClInclude Include="Tavern.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

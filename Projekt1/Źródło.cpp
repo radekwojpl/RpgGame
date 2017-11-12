@@ -1,15 +1,17 @@
 #include <iostream>
 #include <string>
+#include "Tavern.h"
 
 #include "RpgGame.h"
 
 using namespace std;
 
-//kolejny test do gita
 
 int main()
 {
 	Hero Player;
+	Tavern Tavern;
+
 	int choice;
 	cout << endl;
 	int exitStatus = 7;
@@ -18,7 +20,7 @@ int main()
 	do
 	{
 		cout << "\n1. Print hero statistics\n"
-			<< "3. Arena\n"
+			<< "3. Arena\n" 
 			<< "4. Boss\n"
 			<< "5. Shop\n"
 			<< "6. Tavern\n"
@@ -37,6 +39,7 @@ int main()
 		case 5:
 			break;
 		case 6:
+			Tavern.printTavernMenu(Player);
 			break;
 		case 7:
 			cout << "End of Game.\n";
