@@ -1,24 +1,34 @@
 #include <iostream>
 #include <string>
+#include "Tavern.h"
+#include <Windows.h>
 
 #include "RpgGame.h"
 
 using namespace std;
 
+<<<<<<< HEAD
 //kolejny test do gita2
+=======
+void setCursorr(short int x, short int y);
+
+>>>>>>> f47b0fe244d69403f3695f9bc8252a9d4c286127
 
 int main()
 {
 	Hero Player;
+	Tavern Tavern;
+
 	int choice;
 	cout << endl;
 	int exitStatus = 7;
 	cout << "Create your hero\n";
 	Player.createHero();
+	system("cls");
 	do
 	{
 		cout << "\n1. Print hero statistics\n"
-			<< "3. Arena\n"
+			<< "3. Arena\n" 
 			<< "4. Boss\n"
 			<< "5. Shop\n"
 			<< "6. Tavern\n"
@@ -28,7 +38,10 @@ int main()
 		switch (choice)
 		{
 		case 1:
+			system("cls");
 			Player.printInfoAboutHero();
+			system("pause");
+			system("cls");
 			break;
 		case 3:
 			break;
@@ -37,6 +50,9 @@ int main()
 		case 5:
 			break;
 		case 6:
+			system("cls");
+			Tavern.printTavernMenu(Player);
+			system("cls");
 			break;
 		case 7:
 			cout << "End of Game.\n";
@@ -54,7 +70,11 @@ int main()
 	return 0;
 }
 
-
+void setCursorr(short int x, short int y)
+{
+	COORD p = { x, y };
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), p);
+}
 
 
 

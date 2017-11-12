@@ -2,14 +2,53 @@
 
 
 
+
 int Hero::strongAttack()
 {
-	return 0 ;
+	return 15 ;
 }
 
-bool Hero::isHit()
+bool Hero::isHeroHitTheTarget()
 {
-	return true;
+	random_device rd;
+	mt19937 eng(rd());
+	uniform_int_distribution<> hitRateTableRange(1, 10);
+
+	int hitRateTable[10] = { 0,1,1,0,1,0,1,1,0,1 };
+
+	int isHit = hitRateTableRange(eng);
+
+	if (hitRateTable[isHit]==0)
+		return false;
+	else
+		return true;
+}
+
+int Hero::lightAttack()
+{
+	return 10;
+}
+
+void Hero::increaseLvl()
+{
+	this->lvl += 1;
+}
+
+void Hero::levelUp()
+{
+	if (this->isNextLevelAvailable() == true)
+	{
+		this->lvl += 1;
+		this->heroStatistisc.increasStatisticsIfHeroLevelUp(this->getHeroProfession());
+	}
+}
+
+bool Hero::isNextLevelAvailable()
+{
+	if (this->currentPD == this->nextLevelPD)
+		return true;
+	else
+		return false;
 }
 
 void Hero::printInfoAboutHero()
@@ -45,9 +84,19 @@ string Hero::getHeroProfession()
 	return this->heroProfession;
 }
 
-int Hero::getPD()
+int Hero::getLvl()
 {
-	return this->PD;
+	return this->lvl;
+}
+
+int Hero::getCurrentPD()
+{
+	return this->currentPD;
+}
+
+void Hero::setCurentPDToZero()
+{
+	this->currentPD = 0;
 }
 
 int Hero::getNextLevelPD()
@@ -102,7 +151,6 @@ Hero::Hero(string name, string heroProfession)
 Hero::Hero()
 {
 }
-
 
 Hero::~Hero()
 {
