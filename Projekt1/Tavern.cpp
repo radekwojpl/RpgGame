@@ -23,12 +23,15 @@ void Tavern::printTavernMenu(Hero &Player)
 		switch (tavernChoice)
 		{
 		case 1:
+			system("cls");
 			restoreHeroMana(Player);
 			break;
 		case 2:
+			system("cls");
 			heroLevelUp(Player);
 			break;
 		case 3:
+			system("cls");
 			restoreHeroHealth(Player);
 			break;
 		case 4:

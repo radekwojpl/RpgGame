@@ -1,10 +1,13 @@
 #include <iostream>
 #include <string>
 #include "Tavern.h"
+#include <Windows.h>
 
 #include "RpgGame.h"
 
 using namespace std;
+
+void setCursorr(short int x, short int y);
 
 
 int main()
@@ -17,6 +20,7 @@ int main()
 	int exitStatus = 7;
 	cout << "Create your hero\n";
 	Player.createHero();
+	system("cls");
 	do
 	{
 		cout << "\n1. Print hero statistics\n"
@@ -30,7 +34,10 @@ int main()
 		switch (choice)
 		{
 		case 1:
+			system("cls");
 			Player.printInfoAboutHero();
+			system("pause");
+			system("cls");
 			break;
 		case 3:
 			break;
@@ -39,7 +46,9 @@ int main()
 		case 5:
 			break;
 		case 6:
+			system("cls");
 			Tavern.printTavernMenu(Player);
+			system("cls");
 			break;
 		case 7:
 			cout << "End of Game.\n";
@@ -57,7 +66,11 @@ int main()
 	return 0;
 }
 
-
+void setCursorr(short int x, short int y)
+{
+	COORD p = { x, y };
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), p);
+}
 
 
 

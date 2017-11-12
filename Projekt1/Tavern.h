@@ -2,10 +2,12 @@
 #include <iostream>
 #include <string>
 #include "Hero.h"
+#include <Windows.h>
 
 using namespace std;
 
 class Hero;
+void setCursorr(short int x, short int y);
 
 class Tavern
 {
