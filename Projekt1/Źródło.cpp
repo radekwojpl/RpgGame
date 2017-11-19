@@ -1,23 +1,23 @@
 #include <iostream>
 #include <string>
 #include "Tavern.h"
+#include "Shop.h"
 #include <Windows.h>
-
 #include "RpgGame.h"
 
 using namespace std;
 
-<<<<<<< HEAD
-//kolejny test do gita2
-=======
+
 void setCursorr(short int x, short int y);
 
->>>>>>> f47b0fe244d69403f3695f9bc8252a9d4c286127
+
 
 int main()
 {
 	Hero Player;
 	Tavern Tavern;
+	Shop Shop;
+
 
 	int choice;
 	cout << endl;
@@ -48,6 +48,9 @@ int main()
 		case 4:
 			break;
 		case 5:
+			system("cls");
+			Shop.printShopMenu(Player);
+			system("cls");
 			break;
 		case 6:
 			system("cls");

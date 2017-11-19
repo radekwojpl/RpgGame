@@ -37,6 +37,7 @@ void Tavern::printTavernMenu(Hero &Player)
 		case 4:
 			break;
 		default:
+			system("cls");
 			break;
 		}
 	} while (tavernChoice != exitStatus);

@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 #include "Statistics.h"
-#include "Equipment.h"
+
 #include "Tavern.h"
 #include <cmath>
 #include <random>
@@ -13,6 +13,7 @@ using namespace std;
 
 class Hero
 {
+	friend class Shop;
 	friend class Tavern;
 private:
 	int lvl = 1;
